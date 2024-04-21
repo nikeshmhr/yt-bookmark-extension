@@ -1,0 +1,11 @@
+#yt-bookmark-img-logo {
+    width: 100%;
+}
+
+#yt-bookmark-button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 50px;
+    background: transparent;
+}

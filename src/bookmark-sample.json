@@ -1,0 +1,12 @@
+{
+    "vid1": {
+        "title": "",
+        "bookmarks": [
+            {
+                "timestampRaw": "02:33",
+                "timestampInSec": 123,
+                "bookmarkedDate": 123123213123
+            }
+        ]
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "manifest_version": 3,
+    "name": "YT Bookmark",
+    "description": "Bookmarks current timestamp of a video",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "js": [
+                "src/content-script.js"
+            ],
+            "matches": [
+                "https://*.youtube.com/watch?v=*"
+            ],
+            "css": [
+                "src/content-script-styles.css"
+            ]
+        }
+    ],
+    "background": {
+        "service_worker": "src/background.js",
+        "type": "module"
+    },
+    "action": {
+        "default_icon": {
+            "128": "images/icon-128.png"
+        }
+    },
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "images/logo.png"
+            ],
+            "matches": [
+                "https://*.youtube.com/*"
+            ]
+        }
+    ],
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "storage"
+    ]
+}
