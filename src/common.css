@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Only to development **/
+body {
+    display: flex;
+    justify-content: center;
+}
+
+:root {
+    --main-green: #03A678;
+    --light-green: #60BFA4;
+    --white: #F2F2F2;
+    --yellow: #F2B56B;
+    --black: #0D0D0D;
+}
+
+/** Custom scrollbar **/
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--white);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--light-green);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--main-green);
+}

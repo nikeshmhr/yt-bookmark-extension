@@ -1,0 +1,61 @@
+@import url('common.css');
+
+:root {
+    font-size: 20px;
+}
+
+body {
+    padding: 10px;
+}
+
+.instruction-container {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    height: 600px;
+    padding: 1rem;
+}
+
+.instruction-container header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+header img {
+    width: 50px;
+}
+
+header h2 {
+    color: var(--main-green);
+}
+
+.description {
+    margin-top: 1rem;
+}
+
+h3 {
+    margin: 1.5rem 0 1rem;
+}
+
+p {
+    line-height: 1.5rem;
+}
+
+figure {
+    margin: 1rem 0;
+}
+
+figure img {
+    width: 100%;
+}
+
+figure figcaption {
+    font-style: italic;
+    text-align: center;
+    font-size: .9rem;
+}
+
+li {
+    line-height: 2rem;
+}

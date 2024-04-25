@@ -1,3 +1,9 @@
+chrome.runtime.onInstalled.addListener((_reason) => {
+  chrome.tabs.create({
+    url: "/src/instruction.html",
+  });
+});
+
 // Define a function to set the popup for the currently active tab
 async function setPopupForActiveTab() {
   const [currentTab] = await chrome.tabs.query({
